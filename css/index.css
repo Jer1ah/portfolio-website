@@ -10,6 +10,7 @@ html {
 
 body {
   font-size: 62.5%;
+  font-family: "Lato", sans-serif;
 }
 
 .header {
@@ -18,27 +19,44 @@ body {
   background-position: center;
   height: 100vh;
   text-align: center;
+  position: relative;
 }
 .header__logo {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border: rgba(230, 230, 230, 0.25) solid 1rem;
+  border: rgba(200, 200, 200, 0.25) solid 1rem;
   display: inline-flex;
-  margin: 12.5rem auto 0;
+  margin: 13rem auto 0;
 }
 .header__logo h1 {
   font-size: 10rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.25rem 0.25rem;
   color: white;
+  font-weight: 900;
+  letter-spacing: -0.33rem;
 }
 .header span {
   display: block;
   margin-top: 1rem;
   color: white;
   font-size: 1.75rem;
-  letter-spacing: 0.1rem;
+}
+.header .down-arrow {
+  width: 2rem;
+  position: absolute;
+  bottom: 0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header .down-arrow img {
+  width: 100%;
+}
+
+.about {
+  height: 25rem;
+  background-color: #F05A5D;
 }
 
 /*# sourceMappingURL=index.css.map */
