@@ -1,4 +1,80 @@
 .about {
-    height: 25rem;
     background-color: $main-red;
+    padding: .1rem;
+
+    &__wrapper {
+        width: 70rem;
+        max-width: 95%;
+        margin: 5rem auto;
+        @include displayFlex(row, space-between, flex-start);
+    }
+
+    &__image {
+        background: linear-gradient(rgba(240,93,90,.5), rgba(240,93,90,.5)),
+                    url('../../images/profile-image.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 45%;
+        height: 30rem;
+        position: relative;
+    }
+
+    &__title {
+        @include displayFlex(column, flex-start, flex-start);
+        position: absolute;
+        top: 0;
+        left: -3rem;
+
+        h2 {
+            font-size: 5rem;
+            line-height: 4.75rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: .05rem;
+            color: $secondary-blue;
+        }
+
+        h2:first-child {
+            font-weight: 400;
+            font-size: 4.75rem;
+        }
+    }
+
+    &__info {
+        width: 50%;
+        @include displayFlex(column, flex-end, flex-start);
+
+        h3 {
+            font-size: 1.85rem;
+            font-weight: 700;
+            margin-bottom: .55rem;
+            letter-spacing: .1rem;
+            color: $secondary-blue;
+        }
+
+        h4 {
+            font-size: 1.7rem;
+            font-weight: 400;
+            color: $secondary-blue;
+        }
+
+        .line {
+            height: .15rem;
+            width: 5rem;
+            background-color: $main-black;
+            margin: 1.5rem 0;
+        }
+
+        p {
+            color: $main-white;
+            font-size: 1.25rem;
+            letter-spacing: .05rem;
+            font-weight: 300;
+            line-height: 1.75rem;
+        }
+
+        p:last-child {
+            margin-top: 1rem;
+        }
+    }
 }
