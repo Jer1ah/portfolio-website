@@ -61,7 +61,7 @@ body {
 .about__wrapper {
   width: 70rem;
   max-width: 95%;
-  margin: 5rem auto;
+  margin: 7.5rem auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -130,6 +130,11 @@ body {
 }
 .about__info p:last-child {
   margin-top: 1rem;
+}
+
+.skills {
+  height: 30rem;
+  background-color: #112437;
 }
 
 /*# sourceMappingURL=index.css.map */
