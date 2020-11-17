@@ -143,7 +143,7 @@ body {
   align-items: center;
   width: 60rem;
   max-width: 95%;
-  margin: 7rem auto 0;
+  margin: 5.5rem auto 0;
 }
 .skills__title h2 {
   color: #F05A5D;
@@ -163,7 +163,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 60rem;
-  margin: 5rem auto 7rem;
+  margin: 5rem auto 5.5rem;
   list-style: none;
   padding: 0;
 }

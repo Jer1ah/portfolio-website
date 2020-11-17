@@ -6,7 +6,7 @@
         @include displayFlex(column, flex-start, center);
         width: 60rem;
         max-width: 95%;
-        margin: 7rem auto 0;
+        margin: 5.5rem auto 0;
 
         h2 {
             color: $main-red;
@@ -26,7 +26,7 @@
     &__list {
         @include displayFlex(row, space-between, flex-start);
         width: 60rem;
-        margin: 5rem auto 7rem; 
+        margin: 5rem auto 5.5rem; 
         list-style: none;
         padding: 0;
     }
