@@ -233,6 +233,7 @@ body {
   background-color: #112437;
   border-radius: 0.2rem;
   overflow: hidden;
+  box-shadow: 0px 0px 5px 0px #112437;
 }
 .portfolio__listItem .image {
   background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/natours-website.png");
@@ -277,19 +278,64 @@ body {
   left: 0;
 }
 .portfolio__listItem .info .buttons a {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 1rem;
-  padding: 0.25rem 1rem;
+  padding: 0.35rem 1rem;
   background-color: #F05A5D;
   border-radius: 0.1rem;
   font-weight: 600;
   letter-spacing: 0.05rem;
-  border: 0.15rem solid #F05A5D;
+  border: 0.175rem solid #F05A5D;
   opacity: 0.9;
+  transition: all 0.25s;
+}
+.portfolio__listItem .info .buttons a:hover {
+  background-color: #112437;
 }
 .portfolio__listItem .info .buttons a:first-child {
   margin-right: 0.75rem;
+}
+.portfolio .one {
+  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/weather-app.png");
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio .two {
+  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/natours-website.png");
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio .three {
+  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/scenic-website.png");
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio .four {
+  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/black-angus-website.png");
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio .five {
+  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/quiz-game.png");
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+.portfolio .six {
+  background: linear-gradient(rgba(17, 36, 55, 0.75), rgba(17, 36, 55, 0.75)), url("../../images/last-of-us-website.png");
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.footer {
+  height: 10rem;
+  background-color: #F05A5D;
 }
 
 /*# sourceMappingURL=index.css.map */

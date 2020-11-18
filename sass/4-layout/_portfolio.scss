@@ -38,6 +38,7 @@
         background-color: $secondary-blue;
         border-radius: .2rem;
         overflow: hidden;
+        box-shadow: 0px 0px 5px 0px #112437;
 
         .image {
             background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
@@ -85,16 +86,21 @@
                 left: 0;
 
                 a {
-                    color: $main-black;
+                    color: $main-white;
                     text-decoration: none;
                     font-size: 1rem;
-                    padding: .25rem 1rem;
+                    padding: .35rem 1rem;
                     background-color: $main-red;
                     border-radius: .1rem;
                     font-weight: 600;
                     letter-spacing: .05rem;
-                    border: .15rem solid $main-red;
+                    border: .175rem solid $main-red;
                     opacity: .9;
+                    transition: all .25s;
+
+                    &:hover {
+                        background-color: $secondary-blue;
+                    }
                 }
 
                 a:first-child {
@@ -102,5 +108,53 @@
                 }
             }
         }
+    }
+
+    .one {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                        url('../../images/weather-app.png');
+        height: 10rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .two {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                        url('../../images/natours-website.png');
+        height: 10rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .three {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                        url('../../images/scenic-website.png');
+        height: 10rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .four {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                        url('../../images/black-angus-website.png');
+        height: 10rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .five {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                        url('../../images/quiz-game.png');
+        height: 10rem;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .six {
+        background: linear-gradient(rgba(17, 36, 55, .75), rgba(17, 36, 55, .75)),
+                        url('../../images/last-of-us-website.png');
+        height: 10rem;
+        background-position: center;
+        background-size: cover;
     }
 }
