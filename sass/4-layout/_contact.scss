@@ -1,0 +1,26 @@
+.contact {
+    height: 10rem;
+    background-color: $secondary-blue;
+    padding: .1rem;
+
+    &__title {
+        @include displayFlex(column, flex-start, center);
+        width: 60rem;
+        max-width: 95%;
+        margin: 5.5rem auto 0;
+
+        h2 {
+            color: $main-red;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            letter-spacing: .1rem;
+        }
+    
+        .line {
+            height: .2rem;
+            background-color: $main-red;
+            width: 5rem;
+            margin-top: .25rem;
+        }
+    }
+}
