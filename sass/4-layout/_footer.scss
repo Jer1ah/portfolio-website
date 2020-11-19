@@ -1,4 +1,12 @@
 .footer {
-    height: 10rem;
-    background-color: $main-red;
+    background-color: $secondary-blue;
+    @include displayFlex(column, center, center);
+
+    span {
+        color: $main-white;
+        display: inline-block;
+        font-size: 1rem;
+        letter-spacing: .1rem;
+        margin: 1rem auto;
+    }
 }

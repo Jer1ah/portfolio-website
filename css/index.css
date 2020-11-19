@@ -324,12 +324,39 @@ body {
   background-color: #112437;
   padding: 0.1rem;
 }
+.contact__email {
+  text-decoration: none;
+  color: white;
+  border: 0.1rem solid white;
+  border-radius: 0.2rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 2rem;
+  transition: all 0.25s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact__email img {
+  height: 1.5rem;
+  margin-right: 0.75rem;
+  margin-top: 0.05rem;
+}
+.contact__email:hover {
+  background-color: white;
+  color: #112437;
+}
 .contact__list {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
   padding: 0;
   list-style: none;
 }
@@ -339,19 +366,31 @@ body {
 .contact__listItem a {
   text-decoration: none;
   color: white;
-  font-size: 1rem;
-}
-.contact span {
-  color: white;
-  opacity: 0.85;
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-  display: inline-block;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.contact__listItem img {
+  height: 1.25rem;
+  margin-right: 0.5rem;
 }
 
 .footer {
-  height: 10rem;
-  background-color: #F05A5D;
+  background-color: #112437;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer span {
+  color: white;
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem auto;
 }
 
 /*# sourceMappingURL=index.css.map */
