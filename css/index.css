@@ -232,6 +232,8 @@ body {
   height: 20rem;
   margin-bottom: 2rem;
   position: relative;
+  box-shadow: 0px 0px 10px 0px #444;
+  overflow: hidden;
 }
 .portfolio__listItem .info {
   position: absolute;
@@ -244,7 +246,7 @@ body {
   font-size: 2rem;
   letter-spacing: 0.1rem;
   opacity: 0.85;
-  font-size: 900;
+  font-weight: 500;
 }
 .portfolio__listItem .info .buttons {
   display: flex;
@@ -254,18 +256,27 @@ body {
   margin-top: 0.75rem;
 }
 .portfolio__listItem .info .buttons a {
-  color: white;
+  color: #112437;
   opacity: 0.95;
   text-decoration: none;
   font-size: 1.1rem;
   background-color: #F05A5D;
   padding: 0.35rem 1rem;
   font-weight: 500;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.05rem;
   border: 0.2rem solid #F05A5D;
 }
 .portfolio__listItem .info .buttons a:first-child {
   margin-right: 1rem;
+}
+.portfolio__listItem .overlay {
+  position: absolute;
+  top: 0;
+  left: -2rem;
+  height: 100%;
+  width: 2%;
+  background-color: rgba(17, 36, 55, 0.75);
+  transition: all 0.75s;
 }
 .portfolio .one {
   background: linear-gradient(rgba(17, 36, 55, 0.7), rgba(17, 36, 55, 0.7)), url("../../images/weather-app.png");

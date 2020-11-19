@@ -36,7 +36,9 @@
         width: 48.5%;
         height: 20rem;
         margin-bottom: 2rem;
-        position: relative;
+        position: relative; 
+        box-shadow: 0px 0px 10px 0px #444;
+        overflow: hidden;
 
         .info {
             position: absolute;
@@ -49,7 +51,7 @@
                 font-size: 2rem;
                 letter-spacing: .1rem;
                 opacity: .85;
-                font-size: 900;
+                font-weight: 500;
             }
 
             .buttons {
@@ -57,14 +59,14 @@
                 margin-top: .75rem;
 
                 a {
-                    color: $main-white;
+                    color: $secondary-blue;
                     opacity: .95;
                     text-decoration: none;
                     font-size: 1.1rem;
                     background-color: $main-red;
                     padding: .35rem 1rem;
                     font-weight: 500;
-                    letter-spacing: .1rem;
+                    letter-spacing: .05rem;
                     border: .2rem solid $main-red;
 
                     &:first-child {
@@ -72,6 +74,16 @@
                     }
                 }
             }
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: -2rem;
+            height: 100%;
+            width: 2%;
+            background-color: rgba(17, 36, 55, .75);
+            transition: all .75s;
         }
     }
 
