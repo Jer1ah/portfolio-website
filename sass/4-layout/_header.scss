@@ -41,3 +41,20 @@
         }
     }
 }
+
+//media queries
+@media(max-width: 725px) {
+    .header {
+        &__logo {
+            margin-top: 15rem;
+
+            h1 {
+                font-size: 7.5rem;
+            }
+        }
+
+        span {
+            font-size: 1.5rem;
+        }
+    }
+}

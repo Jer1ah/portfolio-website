@@ -54,6 +54,17 @@ body {
   width: 100%;
 }
 
+@media (max-width: 725px) {
+  .header__logo {
+    margin-top: 15rem;
+  }
+  .header__logo h1 {
+    font-size: 7.5rem;
+  }
+  .header span {
+    font-size: 1.5rem;
+  }
+}
 .about {
   background-color: #F05A5D;
   padding: 0.1rem;
