@@ -42,7 +42,7 @@
 
         .info {
             position: absolute;
-            bottom: 4rem;
+            bottom: 3.5rem;
             left: 3.5rem;
             z-index: 500;
 
@@ -65,12 +65,19 @@
                     font-size: 1.1rem;
                     background-color: $main-red;
                     padding: .35rem 1rem;
-                    font-weight: 500;
+                    font-weight: 600;
                     letter-spacing: .05rem;
                     border: .2rem solid $main-red;
+                    transition: all .3s;
 
                     &:first-child {
                         margin-right: 1rem;
+                    }
+
+                    &:hover {
+                        background-color: transparent;
+                        color: $main-white;
+                        opacity: .8;
                     }
                 }
             }
@@ -79,11 +86,12 @@
         .overlay {
             position: absolute;
             top: 0;
-            left: -2rem;
+            left: 0;
             height: 100%;
-            width: 2%;
-            background-color: rgba(17, 36, 55, .75);
-            transition: all .75s;
+            width: 100%;
+            background-color: rgba(17, 36, 55, .85);
+            transition: all .35s;
+            opacity: 0;
         }
     }
 

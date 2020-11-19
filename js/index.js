@@ -4,11 +4,11 @@ const portfolioListItemController = (function(){
 
     for(let i = 0; i < _listItems.length; i++) {
         _listItems[i].addEventListener('mouseenter', () => {
-            _overlayList[i].style.transform = 'scale(120)';
+            _overlayList[i].style.opacity = '1';
         });
 
         _listItems[i].addEventListener('mouseleave', () => {
-            _overlayList[i].style.transform = 'scale(0)';
+            _overlayList[i].style.opacity = '0';
         });
     }
 }());

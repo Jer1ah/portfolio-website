@@ -237,7 +237,7 @@ body {
 }
 .portfolio__listItem .info {
   position: absolute;
-  bottom: 4rem;
+  bottom: 3.5rem;
   left: 3.5rem;
   z-index: 500;
 }
@@ -262,21 +262,28 @@ body {
   font-size: 1.1rem;
   background-color: #F05A5D;
   padding: 0.35rem 1rem;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.05rem;
   border: 0.2rem solid #F05A5D;
+  transition: all 0.3s;
 }
 .portfolio__listItem .info .buttons a:first-child {
   margin-right: 1rem;
 }
+.portfolio__listItem .info .buttons a:hover {
+  background-color: transparent;
+  color: white;
+  opacity: 0.8;
+}
 .portfolio__listItem .overlay {
   position: absolute;
   top: 0;
-  left: -2rem;
+  left: 0;
   height: 100%;
-  width: 2%;
-  background-color: rgba(17, 36, 55, 0.75);
-  transition: all 0.75s;
+  width: 100%;
+  background-color: rgba(17, 36, 55, 0.85);
+  transition: all 0.35s;
+  opacity: 0;
 }
 .portfolio .one {
   background: linear-gradient(rgba(17, 36, 55, 0.7), rgba(17, 36, 55, 0.7)), url("../../images/weather-app.png");
@@ -310,30 +317,36 @@ body {
 }
 
 .contact {
-  height: 10rem;
-  background-color: #112437;
-  padding: 0.1rem;
-}
-.contact__title {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 60rem;
-  max-width: 95%;
-  margin: 5.5rem auto 0;
+  background-color: #112437;
+  padding: 0.1rem;
 }
-.contact__title h2 {
-  color: #F05A5D;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
+.contact__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  padding: 0;
+  list-style: none;
 }
-.contact__title .line {
-  height: 0.2rem;
-  background-color: #F05A5D;
-  width: 5rem;
-  margin-top: 0.25rem;
+.contact__listItem {
+  margin: 0 1rem;
+}
+.contact__listItem a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+.contact span {
+  color: white;
+  opacity: 0.85;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  display: inline-block;
 }
 
 .footer {
