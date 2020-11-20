@@ -26,6 +26,7 @@
     &__list {
         @include displayFlex(row, space-between, flex-start);
         width: 60rem;
+        max-width: 90%;
         margin: 5rem auto 5.5rem; 
         list-style: none;
         padding: 0;
@@ -52,6 +53,30 @@
 
         img {
             width: 5rem;
+        }
+    }
+}
+
+//media queries
+@media(max-width: 850px) {
+    .skills {
+        &__list {
+            flex-wrap: wrap;
+            width: 40rem;
+        }
+
+        &__listItem {
+            width: 48%;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+@media(max-width: 670px) {
+    .skills {
+        &__listItem {
+            width: 100%;
+            margin-bottom: 3.5rem;
         }
     }
 }

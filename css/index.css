@@ -207,6 +207,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   width: 60rem;
+  max-width: 90%;
   margin: 5rem auto 5.5rem;
   list-style: none;
   padding: 0;
@@ -235,6 +236,22 @@ body {
   width: 5rem;
 }
 
+@media (max-width: 850px) {
+  .skills__list {
+    flex-wrap: wrap;
+    width: 40rem;
+  }
+  .skills__listItem {
+    width: 48%;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 670px) {
+  .skills__listItem {
+    width: 100%;
+    margin-bottom: 3.5rem;
+  }
+}
 .portfolio {
   background-color: #A6ADB4;
   padding: 0.1rem;
