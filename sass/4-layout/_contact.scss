@@ -54,3 +54,20 @@
         }
     }
 }
+
+//media queries 
+@media(max-width: 625px) {
+    .contact {
+        &__list {
+            flex-direction: column;
+        }
+
+        &__listItem {
+            margin-bottom: 2rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
